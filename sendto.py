@@ -1,4 +1,3 @@
-from pprint import pprint
 from secrets import todoist_api_key
 
 import pyperclip
@@ -9,7 +8,6 @@ def main():
     api = TodoistAPI(todoist_api_key)
     try:
         tasks = api.get_tasks()
-        pprint(tasks)
     except Exception as error:
         print(error)
     try:
