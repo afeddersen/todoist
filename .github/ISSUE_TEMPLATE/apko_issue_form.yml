@@ -1,14 +1,14 @@
-name: Bug Report
+name: 🐞 apko bug report
 description: File a bug report
-title: "[Bug]: "
+title: "[apko bug report]: "
 labels: ["bug", "triage"]
 assignees:
-  - octocat
+  - afeddersen
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to file an issue for apko!
   - type: input
     id: contact
     attributes:
@@ -22,24 +22,27 @@ body:
     attributes:
       label: What happened?
       description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      placeholder: Please describe the issue.
+      value: ""
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: packages
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Packages
+      description: What is the distro? 
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - alpine-amd64
+        - alpine-base-rootless
+        - alpine-slim
+        - nginx-rootless
+        - nginx
     validations:
       required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What is your favorite browser?
       multiple: true
       options:
         - Firefox
