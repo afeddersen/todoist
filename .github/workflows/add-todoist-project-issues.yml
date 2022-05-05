@@ -17,6 +17,6 @@ jobs:
       - uses: actions/add-to-project@main
         with:
           project-url: https://github.com/users/afeddersen/projects/1/
-          github-token: ${{ secrets.issues_token }}
+          github-token: ${{ secrets.ISSUE_SECRET }}
           labeled: bug, needs-triage
           label-operator: OR
