@@ -3,12 +3,12 @@ description: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
 assignees:
-  - octocat
+  - kaniini
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this bug report for apko!
   - type: input
     id: contact
     attributes:
@@ -23,29 +23,33 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "I encountered a 🐞 where..."
     validations:
       required: true
   - type: dropdown
     id: version
     attributes:
       label: Version
-      description: What version of our software are you running?
+      description: Which distro are you using?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - killshotapus-base
+        - killshotapus-arm
+        - alpine-386
+        - alpine-amd64
+        - alpine-base-slim
+        - alpine-base-rootless
     validations:
       required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: DARLING in the FRANXX
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - Zero Two
+        - Hiro
+        - 001
+        - Ichigo
   - type: textarea
     id: logs
     attributes:
